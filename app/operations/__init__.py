@@ -6,7 +6,7 @@ def subtraction(a: float, b: float) -> float:
 
 def division(a: float, b: float) -> float:
     if b == 0:
-        raise ZeroDivisionError("Division by zero is not allowed.")
+        raise ValueError("Division by zero is not allowed.")  # This sends an error message when someone tries to divide by zero.
     return a / b
 
 def multiplication(a: float, b: float) -> float:

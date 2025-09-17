@@ -49,7 +49,7 @@ def calculator():
         elif operation == "divide":
             try:
                 result = division(num1, num2)  # We call the division function to divide the two numbers.
-            except ZeroDivisionError as e:
+            except ValueError as e:
                 # This part handles the case where someone tries to divide by zero, which we can't do.
                 # The division function will throw an error if someone tries dividing by zero, and we catch that error here.
                 print(e)  # Show the error message.
